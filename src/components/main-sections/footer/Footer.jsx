@@ -25,9 +25,11 @@ const Footer = () => {
             <span>Sutra</span> */}
             <img src={logo} alt="" className="w-[7rem] scale-150 object-contain"/>
           </h1>
+           
           <p className="mt-6 text-gray-700 leading-relaxed">
             RudraSutrix is your partner in digital success delivering powerful web, app, SEO, and marketing solutions that drive growth and visibility in the digital world.
           </p>
+          <p className="text-blue-700">rudrasutrix@gmail.com</p>
         </div>
 
         {/* Navigation Links */}
@@ -53,7 +55,7 @@ const Footer = () => {
         <div className="flex flex-col justify-between gap-6">
           <div className="flex gap-4">
             <a
-              href="#"
+              href=""
               className="p-2 rounded-full border border-gray-400 hover:bg-white hover:text-black transition"
             >
               <SiLinkedin />
@@ -65,19 +67,19 @@ const Footer = () => {
               <SiInstagram />
             </a>
             <a
-              href="#"
+              href=""
               className="p-2 rounded-full border border-gray-400 hover:bg-white hover:text-black transition"
             >
               <SiX />
             </a>
             <a
-              href="#"
+              href=""
               className="p-2 rounded-full border border-gray-400 hover:bg-white hover:text-black transition"
             >
               <SiFacebook />
             </a>
             <a
-              href="#"
+              href=""
               className="p-2 rounded-full border border-gray-400 hover:bg-white hover:text-black transition"
             >
               <SiBehance />
@@ -85,6 +87,7 @@ const Footer = () => {
           </div>
           <div>
             <p className="text-xl">STHANU MEDIA SOLUTIONS PRIVATE LIMITED</p>
+           
             <p>
               S-12, Rashi Pride Apts, BTM 6th Stage, 2nd Phase, Bannerghatta
               Road, Bangalore South, Bengaluru, Karnataka 560076
@@ -95,7 +98,7 @@ const Footer = () => {
 
       {/* Copyright */}
       <div className="text-sm text-center text-black mt-12">
-        Copyright © 2025 Wdesigna LLC
+        Copyright © 2025 Rudra Sutrix 
       </div>
     </footer>
   );

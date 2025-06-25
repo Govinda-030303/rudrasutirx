@@ -158,10 +158,10 @@ const SocialMediaIcons = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <h1 className="text-4xl font-bold text-white/90 mb-4">
+          <h1 className="text-4xl font-bold text-black/90 mb-4">
             Social Media Platforms
           </h1>
-          <p className="text-white/90 text-lg">
+          <p className="text-black text-lg">
             Connect with your audience across all major platforms
           </p>
         </motion.div>
@@ -213,7 +213,7 @@ const SocialMediaIcons = () => {
               transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
               className="w-6 h-6 border-2 border-blue-500 border-t-transparent rounded-full"
             />
-            <span className="text-gray-600 font-medium hover:cursor-pointer" onClick={getStarted}>
+            <span className="text-black font-medium hover:cursor-pointer" onClick={getStarted}>
               Connect your brand to the world
             </span>
           </div>

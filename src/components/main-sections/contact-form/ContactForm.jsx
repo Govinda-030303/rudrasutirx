@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import PhoneInput from "react-phone-number-input";
-import "react-phone-number-input/style.css";
+import React from "react";
 import { useForm } from "react-hook-form";
 import classNames from "classnames";
 
@@ -11,46 +9,28 @@ const ContactForm = () => {
     formState: { errors },
     reset,
   } = useForm();
-  const [phone, setPhone] = useState("");
 
-  // const onSubmit = (data) => {
-  //   console.log({ ...data, phone });
-  //   alert("Message sent successfully!");
-  //   reset();
-  //   setPhone("");
-  // };
-  const onSubmit = async (data) => {
-    const formData = new FormData();
-    formData.append("name", data.name);
-    formData.append("email", data.email);
-    formData.append("phone", phone);
-    formData.append("message", data.message);
-  
-    try {
-      const response = await fetch("https://getform.io/f/bejlzmqa", {
-        method: "POST",
-        body: formData,
-      });
-  
-      if (response.ok) {
-        alert("Message sent successfully!");
-        reset();
-        setPhone("");
-      } else {
-        alert("Failed to send message. Please try again.");
-      }
-    } catch (error) {
-      console.error("Error submitting form:", error);
-      alert("An error occurred. Please try again.");
-    }
+  const onSubmit = (data) => {
+    const name = data.name.trim();
+    const email = data.email.trim();
+    const userMessage = data.message.trim();
+
+    const message = `Name: ${name}\nEmail: ${email}\nMessage: ${userMessage}`;
+    const encodedMessage = encodeURIComponent(message);
+
+    const hiddenPhoneNumber = "917597329559"; // Replace with your WhatsApp number (country code included)
+    const whatsappURL = `https://wa.me/${hiddenPhoneNumber}?text=${encodedMessage}`;
+
+    window.open(whatsappURL, "_blank");
+
+    reset();
   };
-  
 
   return (
-    <section className=" py-16 px-6 md:px-20 text-white" id="contact-form">
+    <section className="py-16 px-6 md:px-20 text-white" id="contact-form">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-black">
-          Get in Touch
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
+          Get in Touch via WhatsApp
         </h2>
 
         <form
@@ -91,29 +71,9 @@ const ContactForm = () => {
             )}
           </div>
 
-          {/* Phone Number */}
-          <div>
-            <label className="block mb-2 text-sm font-semibold">Phone</label>
-            <PhoneInput
-              value={phone}
-              onChange={setPhone}
-              defaultCountry="IN"
-              className="react-phone-input"
-              inputStyle={{
-                width: "100%",
-                padding: "12px",
-                backgroundColor: "#3A2551",
-                borderRadius: "0.5rem",
-                border: "none",
-                color: "#fff",
-                fontSize: "1rem",
-              }}
-            />
-          </div>
-
           {/* Message */}
           <div>
-            <label className="block mb-2 text-sm font-semibold">Message</label>
+            <label className="block mb-2 text-sm font-semibold">Query</label>
             <textarea
               rows="4"
               {...register("message", { required: true })}
@@ -124,16 +84,16 @@ const ContactForm = () => {
               placeholder="How can we help you?"
             />
             {errors.message && (
-              <p className="text-red-400 text-sm mt-1">Message is required</p>
+              <p className="text-red-400 text-sm mt-1">Query is required</p>
             )}
           </div>
 
           {/* Submit Button */}
           <button
             type="submit"
-            className="mt-4 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-pink-500 hover:to-purple-500 transition text-white font-semibold py-3 px-6 rounded-lg shadow-md"
+            className="mt-4 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 transition text-white font-semibold py-3 px-6 rounded-lg shadow-md"
           >
-            Send Message
+            Send via WhatsApp
           </button>
         </form>
       </div>

@@ -27,7 +27,7 @@ const Footer = () => {
           </h1>
            
           <p className="mt-6 text-gray-700 leading-relaxed">
-            RudraSutrix is your partner in digital success delivering powerful web, app, SEO, and marketing solutions that drive growth and visibility in the digital world.
+            Rudra Sutrix is your partner in digital success delivering powerful web, app, SEO, and marketing solutions that drive growth and visibility in the digital world.
           </p>
           <p className="text-blue-700">rudrasutrix@gmail.com</p>
         </div>
@@ -86,7 +86,7 @@ const Footer = () => {
             </a>
           </div>
           <div>
-            <p className="text-xl font-semibold">Rudra Sutrix  Solution Private Limited</p>
+            <p className="text-xl font-semibold">Rudra Sutrix Private Limited</p>
            
             <p>
               Cf 104, JDA Complex, Vashali Nagar, Jaipur, Rajasthan 302021 

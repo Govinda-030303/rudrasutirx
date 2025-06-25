@@ -34,7 +34,7 @@ const App = () => {
 
         {/* Hero Section */}
         <div className="relative z-5 h-full flex items-center justify-left pl-5">
-          <HeroSection />
+          {/* <HeroSection /> */}
         </div>
       </div>
 

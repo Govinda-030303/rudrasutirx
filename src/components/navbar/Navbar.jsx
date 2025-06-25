@@ -45,7 +45,7 @@ const Navbar = () => {
             <span onClick={handleScroll}>Services </span>
           </li>
           <li className="py-2 md:py-0">
-            <button className="bg-gray-400 text-black font-semibold px-6 py-2 rounded-full hover:bg-gray-200 transition w-full md:w-auto hover:cursor-pointer active:bg-white/80 hover:scale-90"onClick={getStarted}>
+            <button className="bg-gradient-to-r from-[#D64CD1] via-[#5B88D1] to-[#2368D7]  text-black font-semibold px-6 py-2 rounded-full hover:bg-gray-200 transition w-full md:w-auto hover:cursor-pointer active:bg-white/80 hover:scale-90"onClick={getStarted}>
               Get Started
             </button>
           </li>

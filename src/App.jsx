@@ -15,26 +15,15 @@ const App = () => {
   return (
     <div className="">
       <div className="relative w-full h-screen overflow-hidden">
-        {/* Background Video */}
-        <video
-          className="absolute top-0 left-0 w-full h-full object-cover z-0"
-          autoPlay
-          muted
-          loop
-          playsInline
-        >
-          <source src="/video/bgVideo.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
 
         {/* Navbar */}
-        <div className="relative z-10">
+        <div className="relative">
           <Navbar />
         </div>
 
         {/* Hero Section */}
-        <div className="relative z-5 h-full flex items-center justify-left pl-5">
-          {/* <HeroSection /> */}
+        <div className="relative z-5 h-full flex items-center justify-left">
+          <HeroSection />
         </div>
       </div>
 

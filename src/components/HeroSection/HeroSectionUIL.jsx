@@ -1,12 +1,8 @@
 import React from 'react'
 
-import r1 from '../../assets/cert-images/r1.svg'
-import r2 from '../../assets/cert-images/r2.svg'
-import r3 from '../../assets/cert-images/r3.svg'
-import r4 from '../../assets/cert-images/r4.svg'
+
 
 const HeroSectionUIL = (props) => {
-  const certImage = [r1, r2, r3, r4]
   const handleClick = () => {
     const target = document.getElementById("contact-form");
     if (target) {
@@ -34,12 +30,6 @@ const HeroSectionUIL = (props) => {
          
         </div>
 
-        {/* Certifications */}
-        <div className="flex flex-wrap gap-4 mt-6">
-          {certImage.map((image, index) => (
-            <img src={image} alt={`Certificate ${index + 1}`} key={index} className="w-20 h-20 object-contain" />
-          ))}
-        </div>
       </div>
 
       {/* Image Section */}

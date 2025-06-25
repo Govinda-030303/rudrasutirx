@@ -86,11 +86,10 @@ const Footer = () => {
             </a>
           </div>
           <div>
-            <p className="text-xl">STHANU MEDIA SOLUTIONS PRIVATE LIMITED</p>
+            <p className="text-xl font-semibold">Rudra Sutrix  Solution Private Limited</p>
            
             <p>
-              S-12, Rashi Pride Apts, BTM 6th Stage, 2nd Phase, Bannerghatta
-              Road, Bangalore South, Bengaluru, Karnataka 560076
+              Cf 104, JDA Complex, Vashali Nagar, Jaipur, Rajasthan 302021 
             </p>
           </div>
         </div>

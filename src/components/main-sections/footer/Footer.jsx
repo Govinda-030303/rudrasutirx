@@ -26,9 +26,7 @@ const Footer = () => {
             <img src={logo} alt="" className="w-[7rem] scale-150 object-contain"/>
           </h1>
           <p className="mt-6 text-gray-700 leading-relaxed">
-            Ad Sutra is an award-winning top digital marketing agency providing
-            branding, UX/UI, and product design services in Dubai, New York,
-            London, Paris, and beyond.
+            RudraSutrix is your partner in digital success delivering powerful web, app, SEO, and marketing solutions that drive growth and visibility in the digital world.
           </p>
         </div>
 
@@ -43,12 +41,12 @@ const Footer = () => {
           <a href="#" className="hover:text-white transition">
             What You Get
           </a> */}
-          <span
+          {/* <span
             className="hover:text-black transition hover:cursor-pointer"
             onClick={handleScroll}
           >
             Services
-          </span>
+          </span> */}
         </div>
 
         {/* Contact and Social */}
@@ -61,7 +59,7 @@ const Footer = () => {
               <SiLinkedin />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/rudrasutrix?igsh=MWg3c2dwOTJrZmRobQ==" target="_blank"
               className="p-2 rounded-full border border-gray-400 hover:bg-white hover:text-black transition"
             >
               <SiInstagram />

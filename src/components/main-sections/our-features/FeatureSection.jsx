@@ -42,14 +42,14 @@ const featureData = [
     img: webDevelopment,
     title: "Website Development",
     description:
-      "Manage all your advertising campaigns in one centralized platform. Our unified ads management feature allows you to control, monitor, and adjust ads across multiple platforms with ease. Get a complete view of your campaigns, saving time and ensuring consistency in your messaging. Seamless integration with major ad platforms Real-time performance monitoring Multi-channel management from one dashboard",
+      "Build and manage your online presence effortlessly with our comprehensive website development services. Our platform empowers you to create responsive, fast, and SEO-friendly websites tailored to your brand. From design to deployment, every aspect is handled seamlessly to ensure high performance and user engagement.",
   },
   {
     id: 6,
     img: appDevelopment,
     title: "App Development",
     description:
-      "Manage all your advertising campaigns in one centralized platform. Our unified ads management feature allows you to control, monitor, and adjust ads across multiple platforms with ease. Get a complete view of your campaigns, saving time and ensuring consistency in your messaging. Seamless integration with major ad platforms Real-time performance monitoring Multi-channel management from one dashboard",
+      "Streamline your digital strategy with our end-to-end app development solutions. Whether you need an iOS, Android, or cross-platform app, we deliver intuitive and high-performing applications that keep users engaged. Monitor performance, manage updates, and scale with ease—all from a single development pipeline.",
   },
   
 ];

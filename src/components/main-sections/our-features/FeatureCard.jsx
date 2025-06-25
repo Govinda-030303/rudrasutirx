@@ -112,7 +112,7 @@ const FeatureCard = ({ image, title, description, direction = 'bottom' }) => {
       <motion.div
         variants={containerVariants}
         whileHover={{ scale: 1.03 }}
-        className="bg-gradient-to-b from-blue-500 to-blue-600 rounded-3xl p-6 w-[22rem] h-[35rem] shadow-2xl relative overflow-hidden"
+        className="bg-gradient-to-b from-blue-500 to-blue-600 rounded-3xl p-6 w-[22rem] h-[38rem] shadow-2xl relative overflow-hidden"
       >
         {/* Decorative background */}
         <div className="absolute inset-0 opacity-10">
@@ -200,29 +200,29 @@ const FeatureCard = ({ image, title, description, direction = 'bottom' }) => {
           <motion.div variants={itemVariants} className="text-center">
             <p className="text-white text-sm opacity-90">{description}</p>
           </motion.div>
-
-          {/* Dots */}
-          <motion.div
-            className="flex justify-center mt-4 space-x-2"
-            variants={itemVariants}
-          >
-            {[0, 1, 2].map((i) => (
-              <motion.div
-                key={i}
-                animate={{
-                  scale: [1, 1.2, 1],
-                  opacity: [0.5, 1, 0.5],
-                }}
-                transition={{
-                  duration: 1.5,
-                  repeat: Infinity,
-                  delay: i * 0.2,
-                }}
-                className="w-1.5 h-1.5 bg-white rounded-full"
-              />
-            ))}
-          </motion.div>
         </div>
+
+        {/* Dots - Fixed at Bottom */}
+        <motion.div
+          className="absolute bottom-6 left-0 right-0 flex justify-center space-x-2 z-20"
+          variants={itemVariants}
+        >
+          {[0, 1, 2].map((i) => (
+            <motion.div
+              key={i}
+              animate={{
+                scale: [1, 1.2, 1],
+                // opacity: [0.5, 1, 0.5],
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                delay: i * 0.2,
+              }}
+              className="w-1.5 h-1.5 bg-white rounded-full"
+            />
+          ))}
+        </motion.div>
 
         {/* Pulse Overlay */}
         <motion.div

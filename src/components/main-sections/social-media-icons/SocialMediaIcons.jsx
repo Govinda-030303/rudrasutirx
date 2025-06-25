@@ -48,7 +48,7 @@ const SocialMediaIcons = () => {
             </div>
           </div>
           <div className="flex items-center space-x-1">
-            <span className="font-semibold">Instagram</span>
+            <a className="font-semibold" href='https://www.instagram.com/rudrasutrix?igsh=MWg3c2dwOTJrZmRobQ==' target='_blank'>Instagram</a>
             <div className="flex items-center space-x-1 text-xs">
               <div className="w-3 h-3 bg-blue-400 rounded-full flex items-center justify-center">
                 <span className="text-white text-xs">✓</span>

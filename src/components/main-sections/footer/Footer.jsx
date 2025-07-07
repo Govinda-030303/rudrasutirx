@@ -1,5 +1,5 @@
 import React from "react";
-import logo from '../../../assets/logo/rudrasutrixLogo1.png'
+import logo from '../../../assets/logo/rudrasutrixLogo.png'
 import {
   SiLinkedin,
   SiInstagram,
@@ -23,7 +23,7 @@ const Footer = () => {
           <h1 className="text-3xl font-bold flex items-center gap-2">
             {/* <span className="text-4xl font-black tracking-widest">Ad</span>
             <span>Sutra</span> */}
-            <img src={logo} alt="" className="w-[7rem] scale-150 object-contain"/>
+            <img src={logo} alt="" className="w-[9rem]  object-contain"/>
           </h1>
            
           <p className="mt-6 text-gray-700 leading-relaxed">

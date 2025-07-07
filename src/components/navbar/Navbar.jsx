@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from '../../assets/logo/rudrasutrixLogo1.png'
+import logo from '../../assets/logo/rudrasutrixLogo.png'
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,7 +24,7 @@ const Navbar = () => {
         <div className="text-2xl font-extrabold tracking-wide">
           <h1 className="text-4xl font-bold ">
             {/* Ad <span className="text-purple-400 animate-pulse">Sutra</span> */}
-            <img src={logo} alt="" className=" w-[7rem] h-[3rem] scale-150 object-contain "/>
+            <img src={logo} alt="" className="w-[7rem] object-contain  "/>
           </h1>
         </div>
 
